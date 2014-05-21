@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"
+tools:context=".Listing"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:columnCount="1" >
+
+    <Space />
+
+    <Space />
+
+    <Space />
+
+    <Space />
+    <Space />
+
+    <Space />
+
+    <Space
+        android:layout_width="1dp"
+        android:layout_height="15dp" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_column="0"
+        android:layout_gravity="left|top"
+        android:layout_row="0"
+        android:text="Listing Info"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <Space
+        android:layout_width="1dp"
+        android:layout_height="15dp" />
+
+    <HorizontalScrollView
+        android:id="@+id/horizontalScrollView1"
+        android:layout_width="141dp"
+        android:layout_height="132dp"
+        android:layout_column="0"
+        android:layout_gravity="left|top"
+        android:layout_row="1" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal" >
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="160dp"
+        android:layout_height="82dp"
+        android:layout_column="0"
+        android:layout_gravity="right|top"
+        android:layout_row="1"
+        android:text="Pad Address, price, etc" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="67dp"
+        android:layout_column="0"
+        android:layout_gravity="left|top"
+        android:layout_row="2"
+        android:text="Pad Details" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_height="101dp"
+        android:layout_column="0"
+        android:layout_gravity="left|top"
+        android:layout_row="3"
+        android:text="Pad description" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="match_parent"
+        android:layout_height="85dp"
+        android:layout_column="0"
+        android:layout_gravity="left|top"
+        android:layout_row="4"
+        android:text="Seller Details" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="160dp"
+        android:layout_column="0"
+        android:layout_gravity="right|bottom"
+        android:layout_row="1"
+        android:text="Offer" 
+        android:onClick="makeOffer" />
+
+    <Button
+        android:id="@+id/button2"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_column="0"
+        android:layout_gravity="left|top"
+        android:layout_row="6"
+        android:text="News" 
+        android:onClick ="toNews" />
+
+    <Button
+        android:id="@+id/button3"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_column="0"
+        android:layout_gravity="center_horizontal|top"
+        android:layout_row="6"
+        android:text="Pads" 
+        android:onClick ="toPads"/>
+
+    <Button
+        android:id="@+id/button4"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_column="0"
+        android:layout_gravity="right|top"
+        android:layout_row="6"
+        android:text="Profile" 
+        android:onClick ="toProfile"/>
+
+</GridLayout>
